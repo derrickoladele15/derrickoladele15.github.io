@@ -1,78 +1,105 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Derrick Amoah‑Oladele · Portfolio</title>
-  <meta name="description" content="Junior Geologist & Geotechnical Engineering candidate. FE (Civil) passed.">
-  <link rel="stylesheet" href="assets/style.css">
+  <meta name="description" content="Junior Geologist & Geotechnical Engineer — FE (Civil) Passed, EIT pending." />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-  <header class="container header">
-    <div class="avatar" aria-hidden="true">DA</div>
-    <div>
-      <h1>Derrick Amoah‑Oladele</h1>
-      <p>Junior Geologist · Geotechnical | M.Eng (May) · FE (Civil) Passed · EIT pending</p>
-      <nav class="nav">
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-        <a class="btn" href="assets/resume.pdf">Resume</a>
-      </nav>
+  <canvas id="bg"></canvas>
+  <header class="shell">
+    <div class="hero card">
+      <img src="assets/headshot.jpg" alt="Derrick Amoah‑Oladele" class="avatar" />
+      <div class="intro">
+        <h1>Derrick Amoah‑Oladele</h1>
+        <p class="subtitle">Junior Geologist · Geotechnical — M.Eng (May) · FE (Civil) Passed · EIT pending</p>
+        <div class="cta">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn ghost" href="assets/resume.pdf">Resume</a>
+        </div>
+        <div class="links">
+          <a href="mailto:derrick.oladele1@louisiana.edu">Email</a>
+          <span>·</span>
+          <a href="https://linkedin.com/in/derrick-amoah-oladele-eit-31a244115" target="_blank" rel="noreferrer">LinkedIn</a>
+          <span>·</span>
+          <a href="https://github.com/derrickoladele15" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
     </div>
+    <nav class="tabs">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <main class="container">
-    <section class="intro card">
-      <h2>About</h2>
-      <p>I focus on field mapping, core/log interpretation, borehole logging, soil/rock testing, and data QC. Comfortable with ArcGIS/QGIS. Open to relocation.</p>
-    </section>
-
+  <main class="shell">
     <section id="projects" class="grid">
-      <article class="card">
+      <article class="card tilt">
         <h3>Exploration Mapping</h3>
-        <p>Compiled structural measurements and lithologic contacts into a GIS deliverable for a regional map (1:25,000).</p>
-        <a href="#" class="link">View map</a>
+        <p>Regional mapping at 1:25,000: structural measurements, lithologic contacts, symbology & layout in GIS.</p>
+        <a class="chip" href="#">Map sample</a>
       </article>
-      <article class="card">
+      <article class="card tilt">
         <h3>Geotechnical Site Investigation</h3>
-        <p>Logged boreholes, classified samples (USCS), and summarized lab data (Atterberg, compaction, CBR) for foundation recommendations.</p>
-        <a href="#" class="link">Read report</a>
+        <p>Borehole logging, sample classification (USCS), lab summaries (Atterberg, compaction, CBR), and foundation notes.</p>
+        <a class="chip" href="#">Report excerpt</a>
       </article>
-      <article class="card">
+      <article class="card tilt">
         <h3>Well Log Interpretation</h3>
-        <p>Basic petrophysical workflow: QC LAS files, calculate shale volume, porosity, water saturation; cross‑plots in Python.</p>
-        <a href="#" class="link">Notebook</a>
+        <p>QC LAS, shale volume, porosity, Sw; cross‑plots in Python. Intro petrophysics workflow.</p>
+        <a class="chip" href="#">Notebook</a>
+      </article>
+      <article class="card tilt">
+        <h3>Slope/Excavation Notes</h3>
+        <p>Field notes & photos for temporary slope assessments; simple kinematics & soil logging sheets.</p>
+        <a class="chip" href="#">Field pack</a>
       </article>
     </section>
 
     <section id="skills" class="card">
       <h2>Skills</h2>
       <ul class="tags">
-        <li>ArcGIS/QGIS</li><li>Borehole logging</li><li>Core description</li>
-        <li>Soil/Rock testing</li><li>LAS handling</li><li>Python (pandas)</li>
-        <li>Report writing</li><li>QA/QC</li>
+        <li>ArcGIS / QGIS</li><li>Borehole logging</li><li>Core description</li>
+        <li>Soil/Rock testing</li><li>USCS</li><li>LAS handling</li>
+        <li>Python (pandas)</li><li>Report writing</li><li>QA/QC</li>
       </ul>
     </section>
 
-    <section id="experience" class="card">
+    <section id="experience" class="timeline card">
       <h2>Experience</h2>
-      <ul class="timeline">
-        <li><strong>Graduate Research/Teaching</strong> — University of Louisiana at Lafayette</li>
-        <li><strong>Field & Lab Work</strong> — Mapping, logging, testing, and data analysis</li>
-      </ul>
+      <div class="item">
+        <div class="dot"></div>
+        <div class="content">
+          <h4>Graduate Research/Teaching — University of Louisiana at Lafayette</h4>
+          <p>Teaching support and applied research; emphasis on data organization, analysis, and technical writing.</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="dot"></div>
+        <div class="content">
+          <h4>Field & Lab Work</h4>
+          <p>Mapping, logging, soil/rock testing, and data QC supporting exploration and geotechnical decisions.</p>
+        </div>
+      </div>
     </section>
 
-    <section id="contact" class="card">
+    <section id="contact" class="card contact">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:you@example.com">you@example.com</a> · LinkedIn: <a href="#">linkedin.com/in/yourprofile</a> · GitHub: <a href="https://github.com/derrickoladele15">github.com/derrickoladele15</a></p>
+      <p><strong>Email:</strong> <a href="mailto:derrick.oladele1@louisiana.edu">derrick.oladele1@louisiana.edu</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/derrick-amoah-oladele-eit-31a244115" target="_blank" rel="noreferrer">https://linkedin.com/in/derrick-amoah-oladele-eit-31a244115</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/derrickoladele15" target="_blank" rel="noreferrer">https://github.com/derrickoladele15</a></p>
     </section>
   </main>
 
-  <footer class="container footer">
-    <small>© <span id="year"></span> Derrick Amoah‑Oladele. Hosted on GitHub Pages.</small>
+  <footer class="shell footer">
+    <small>© <span id="year"></span> Derrick Amoah‑Oladele · Hosted on GitHub Pages</small>
   </footer>
+
+  <script src="assets/script.js"></script>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
